@@ -1,0 +1,43 @@
+.container {
+  padding: 14px 18px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 70px 24px;
+  gap: 10px;
+}
+
+.emptyIcon { font-size: 52px; }
+
+.emptyTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--text-primary);
+}
+
+.emptySub {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

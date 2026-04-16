@@ -1,0 +1,37 @@
+.container {
+  position: fixed;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  pointer-events: none;
+}
+
+.toast {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  animation: toastPop 0.3s ease both;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: var(--shadow-lg);
+}
+
+.success {
+  background: var(--green);
+  color: #fff;
+}
+
+.warning {
+  background: var(--amber);
+  color: #fff;
+}

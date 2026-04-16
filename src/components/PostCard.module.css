@@ -1,0 +1,273 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+  animation: slideUp 0.3s ease both;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.claimed {
+  opacity: 0.65;
+}
+
+/* Urgent */
+.urgentBanner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--red-light);
+  color: var(--red);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.01em;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.posterRow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 500;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.posterName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.posterMeta {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.time {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+/* Food */
+.foodRow {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.foodEmoji {
+  width: 52px;
+  height: 52px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.foodInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.foodName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.foodQty {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.red { background: var(--red-light); color: var(--red); }
+.amber { background: var(--amber-light); color: var(--amber); }
+.green { background: var(--green-light); color: var(--green-text); }
+.category { background: var(--teal-light); color: var(--teal-text); }
+.free { background: var(--green-light); color: var(--green-text); }
+.veg { background: var(--green-light); color: var(--green-text); }
+
+/* Allergens */
+.allergens {
+  font-size: 11px;
+  color: var(--amber);
+  background: var(--amber-light);
+  border-radius: var(--radius-sm);
+  padding: 5px 9px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Note */
+.note {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  border-left: 2px solid var(--border-strong);
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--bg-secondary);
+}
+
+.noteCollapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.noteExpanded { display: block; }
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 10px -14px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.claimBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  letter-spacing: 0.01em;
+}
+
+.claimBtn:hover { background: var(--green-mid); transform: translateY(-1px); }
+.claimBtn:active { transform: translateY(0); }
+
+.iconActions {
+  display: flex;
+  gap: 4px;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 11px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  justify-content: center;
+}
+
+.iconBtn:hover { background: var(--bg-secondary); color: var(--text-primary); }
+
+.liked { color: var(--red) !important; border-color: var(--red) !important; background: var(--red-light) !important; }
+.saved { color: var(--amber) !important; border-color: var(--amber) !important; background: var(--amber-light) !important; }
+.iconBtn span { font-size: 11px; font-weight: 600; }
+
+/* Claimed row */
+.claimedRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+
+.claimedBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-light);
+  color: var(--green-text);
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.socialActions {
+  display: flex;
+  gap: 4px;
+}
